@@ -57,6 +57,14 @@ h1 {
 .photographer_section article p {
     margin-top: 0;
     font-size:small;
+    margin-bottom: 0;
+}
+
+.photographer_section article h5 {
+    margin-top: 0;
+    color: gray;
+    font-size: small;
+    font-weight: normal;
 }
 
 .photographer_section article img {
