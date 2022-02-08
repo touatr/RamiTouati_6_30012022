@@ -9,7 +9,7 @@
                 "tagline": "Voir le beau dans le quotidien",
                 "price": 400,
                 "portrait": "Portrait_Nora.jpg"
-            },
+            }/*,
             {
                 "name": "Ellie-Rose Wilkens",
                 "id": 930,
@@ -18,7 +18,7 @@
                 "tagline": "Capturer des compositions complexes",
                 "price": 250,
                 "portrait": "Architecture_Horseshoe.jpg"
-            }
+            }*/
         ]
         // et bien retourner le tableau photographers seulement une fois
         return ({
