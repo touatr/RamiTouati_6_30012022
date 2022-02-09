@@ -1,12 +1,13 @@
+   
 function photographerFactory(data) {
-    const { name, city, tagline, country, price, portrait } = data;
+    const { name, city, tagline, country, price, portrait } = data;///rempalcer les
 
     const picture = `assets/photographers/${portrait}`;
 
     function getUserCardDOM() {
         const article = document.createElement( 'article' );//créer un élement article
         const photographerLinkPage = document.createElement('a');
-        photographerLinkPage.setAttribute("href", "photographer.html");
+        photographerLinkPage.setAttribute("href", "photographer.html?id=");
         const img = document.createElement( 'img' );//Créer un élement img
         img.setAttribute("src", picture)//Affecter une image et une src
         photographerLinkPage.appendChild(img);
@@ -26,5 +27,5 @@ function photographerFactory(data) {
         article.appendChild(h5);
         return (article);
     }
-    return { name, city, tagline, country, price, picture, getUserCardDOM }
+    return { getUserCardDOM }//retourner un objet
 }
