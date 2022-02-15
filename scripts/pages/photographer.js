@@ -56,7 +56,7 @@ const photographers = [
     }
 ]
 
-//la variable photographerHeader contient l'élément photograph-header
+//Construction de l'élement photograph-header
 const photographHeader = document.getElementById('photograph-header');
 const description = document.createElement('article');
 photographHeader.appendChild(description);
@@ -74,3 +74,38 @@ photographHeader.appendChild(button);
 const picture = document.createElement('img');
 picture.setAttribute("src", "assets/photographers/MimiKeel.jpg");
 photographHeader.appendChild(picture);
+
+//Création de la partie Trier par
+const mediaSection = document.createElement('section');
+const main = document.querySelector('main');
+main.appendChild(mediaSection);
+const h4 = document.createElement('h4');
+h4.textContent = "Trier par";
+mediaSection.appendChild(h4);
+const ul = document.createElement('ul');
+mediaSection.appendChild(ul);
+const angleUp = document.createElement('i');
+angleUp.setAttribute('class', 'fa-solid fa-angle-up');
+const popular = document.createElement('li');
+popular.setAttribute('class', 'popular');
+const popularAngleUp = document.createElement('div');
+popularAngleUp.setAttribute('class', 'popular-angleUp');
+ul.appendChild(popularAngleUp);
+popularAngleUp.appendChild(angleUp);
+popularAngleUp.appendChild(popular);
+const date = document.createElement('li');
+date.setAttribute('class', 'date');
+const title = document.createElement('li');
+title.setAttribute('class', 'title');
+popular.textContent = "Popularité";
+date.textContent = "Date";
+title.textContent = "Titre";
+ul.appendChild(date);
+ul.appendChild(title);
+
+function displayOrderBy() {
+    title.style.display = 'block';
+    date.style.display = 'block'; 
+}
+
+angleUp.addEventListener('click', displayOrderBy);

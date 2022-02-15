@@ -1,6 +1,6 @@
    
 function photographerFactory(data) {
-    const { name, city, tagline, country, price, portrait } = data;///rempalcer les
+    const { name, city, tagline, country, price, portrait } = data;//remplacer les
 
     const picture = `assets/photographers/${portrait}`;
 

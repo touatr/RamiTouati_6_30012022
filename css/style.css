@@ -58,7 +58,7 @@ h1 {
 
 #photograph-header article h2 {
     color: #D3573C;
-    font-size: 66px;
+    font-size: 56px;
     margin-bottom: 0;
     font-weight: normal;
     margin-top: -3rem;
@@ -73,7 +73,7 @@ h1 {
 }
 
 #photograph-header h3 {
-    margin-top: 0;
+    margin-top: 0.5rem;
     font-size:x-large;
     color: #901C1C;
     font-weight: normal;
@@ -103,7 +103,67 @@ h1 {
     width: 200px;
     border-radius: 7rem;
     object-fit: cover;
-    margin-left: 20rem;
     margin-top: -4rem;
 }
+
+#photograph-header img {
+    margin-left: 20rem;
+}
+
+section {
+    margin-left: 100px;
+    margin-top: 6rem;
+    display: flex;
+}
+
+section h4 {
+    font-size: 20px;
+}
+
+section ul {
+    background: #901C1C;
+    list-style: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+section ul li {
+    border-top: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 1.5rem;
+    padding-left: 10px;
+}
+
+.popular {
+    border: none;
+    padding-top: 10px;
+}
+
+.title {
+    padding-bottom: 5px;
+}
+
+.popular-angleUp {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+}
+
+.popular-angleUp i {
+    font-size: larger;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+section  .title, .date {
+    display: none;
+}
+
 
